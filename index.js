@@ -33,3 +33,8 @@ app.listen(PORT, () => {
 
 const materialsRoutes = require('./routes/materials');
 app.use('/materials', materialsRoutes);
+
+app.use(cors({
+  origin: 'https://onyx-jatuvdfun-onyxs-projects-2e02c8c2.vercel.app',
+  credentials: true
+}));
